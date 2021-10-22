@@ -1,0 +1,23 @@
+{
+    "command": "apache2 -DFOREGROUND",
+    "config_files": [
+        {
+            "source": "/var/lib/kolla/config_files/freezer.conf",
+            "dest": "/etc/freezer/freezer.conf",
+            "owner": "freezer",
+            "perm": "0600"
+        },
+        {
+            "source": "/var/lib/kolla/config_files/wsgi-freezer-api.conf",
+            "dest": "/etc/apache2/conf-enabled/wsgi-freezer.conf",
+            "owner": "freezer",
+            "perm": "0600"
+        }    ],
+    "permissions": [
+        {
+            "path": "/var/log/kolla/freezer",
+            "owner": "freezer:freezer",
+            "recurse": true
+        }
+    ]
+}
