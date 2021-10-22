@@ -1,0 +1,1 @@
+Do not forget to change openstack auth variables with your openstack env

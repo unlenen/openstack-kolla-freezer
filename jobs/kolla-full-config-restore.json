@@ -1,0 +1,20 @@
+{
+	"job_actions": [
+		{
+			"freezer_action": {
+				"action": "restore",
+				"backup_name": "Openstack_config_full",
+				"restore_abs_path": "/etc/kolla",
+				"restore_from_host": "openstack-freezer",
+				"log_file": "/your_backup_folder/Openstack_config_full_restore.log",
+				"container": "/your_backup_folder/Openstack_config_full",
+				"storage": "local",
+				"overwrite": true
+			},
+			"max_retries": 5,
+			"max_retries_interval": 60,
+			"mandatory": true
+		}
+	],
+	"description": "Openstack_config_freezer_api_restore"
+}

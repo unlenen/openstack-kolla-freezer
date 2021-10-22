@@ -1,0 +1,23 @@
+{
+	"job_actions": [
+		{
+			"freezer_action": {
+				"action": "backup",
+				"mode": "fs",
+				"backup_name": "Openstack_config_full",
+				"path_to_backup": "/etc/kolla",
+				"container": "/your_backup_folder/Openstack_config_full",
+				"log_file": "/your_backup_folder/Openstack_config_full_backup.log",
+				"storage": "local",
+				"snapshot": "False"
+			},
+			"max_retries": 3,
+			"max_retries_interval": 60
+		}
+	],
+	"job_schedule": {
+		"schedule_interval": "60 minutes",
+		"schedule_start_date": "2021-10-11T17:58:00"
+	},
+	"description": "Openstack_config_full"
+}

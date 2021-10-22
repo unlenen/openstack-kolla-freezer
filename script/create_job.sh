@@ -1,0 +1,1 @@
+freezer job-create --client openstacktest-freezer --file $1
